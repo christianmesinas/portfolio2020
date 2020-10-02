@@ -306,7 +306,7 @@
 /*------------Footer-----------*/
           /*footer section*/
           footer{
-            position: absolute;
+            position: relative;
             padding: 10%
           }
 
@@ -342,6 +342,7 @@
           /*external link button*/
 
           .projectWebsite{
+            text-align: center;
             width: 80%;
             border:2px solid #616264;
             display:inline-block;
