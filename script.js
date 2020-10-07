@@ -44,3 +44,18 @@
                showMenu = false;
            }
        }
+
+ //======== Jquery full page navigation =============//
+
+            $(document).ready(function() {
+
+                 $('#fullpage').fullpage({
+                  sectionSelector: '.vertical-scrolling',
+                  responsiveWidth: 740,
+                  navigation: false,
+                  slidesNavigation: true,
+                  controlArrows: false,
+                  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection'],
+
+                });
+              })
