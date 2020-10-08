@@ -18,6 +18,7 @@
           z-index: 1;
         }
 
+
 /* Styling the menu button */
        .menu-btn {
            position: absolute;
@@ -94,6 +95,10 @@
 
           .menu{
             visibility: visible;
+
+          }
+          .fp-viewing-secondSection header .menu, .fp-viewing-fourthSection header .menu {
+            margin-left: 50%;
           }
           .menu ul{
             margin-top: 0px;
@@ -102,6 +107,12 @@
           .nav-item{
             padding: 15px;
             font-size: 18px;
+          }
+          .menu ul li a{
+            color: #85878A;
+          }
+          .menu ul li a:hover{
+            color:#2F485A;
           }
          }
 
@@ -208,7 +219,7 @@
            height: 400px;
         	 width: 100%;
            display: block;
-
+           text-decoration: none;
         }
 
         .card:before {
@@ -223,17 +234,23 @@
       }
 
          .card:nth-child(1):before {
-        	 background-image: url(./images/grey_phone.jpg);
+           background-image: url(./images/IMG_5176.jpg);
+           filter: grayscale(50%);
+
         }
 
          .card:nth-child(2):before {
-        	 background-image: url(./images/mockup_desktop.jpg);
+           background-image: url(./images/2020-10-08.png);
+
         }
          .card:nth-child(3):before {
-        	 background-image: url(./images/grey_keyboard.jpg);
+           background-image: url(./images/grey.jpg);
+
+
         }
          .card:nth-child(4):before {
-        	 background-image: url(./images/waterfalls.jpg);
+           background-image: url(./images/black_laptop.jpg);
+
         }
 
 /*-----projects section desktop--------*/
@@ -247,6 +264,7 @@
             position: inherit;
           }
           .project-links{
+            background-color: black;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-column-gap: 0px;
@@ -273,6 +291,114 @@
           .link4{
             grid-area: 3 / 1 / 6 / 3;
           }
+
+
+           .card {
+             position: relative;
+          	 display: flex;
+          	 align-items: flex-end;
+          	 overflow: hidden;
+          	 padding: 1rem;
+          	 width: 100%;
+          	 text-align: center;
+          	 color: white;
+          	 background-color: whitesmoke;
+          	 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+          }
+
+          .card:before {
+          	 content: '';
+          	 position: absolute;
+          	 top: 0;
+          	 left: 0;
+          	 width: 100%;
+          	 height: 110%;
+          	 background-size: cover;
+          	 transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+          	 pointer-events: none;
+          }
+           .card:after {
+          	 content: '';
+          	 display: block;
+          	 position: absolute;
+          	 top: 0;
+          	 left: 0;
+          	 width: 100%;
+          	 height: 200%;
+          	 pointer-events: none;
+          	 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
+          	 transform: translateY(-50%);
+          	 transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
+          }
+          .content {
+          	 position: relative;
+          	 display: flex;
+          	 flex-direction: column;
+          	 align-items: center;
+          	 width: 100%;
+          	 padding: 1rem;
+          	 transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1);
+          	 z-index: 1;
+          }
+
+           .title {
+          	 font-size: 1.3rem;
+          	 font-weight: bold;
+          	 line-height: 1.2;
+          }
+           .copy {
+          	 font-size: 1.125rem;
+          	 line-height: 1.35;
+          }
+           .btn {
+          	 cursor: pointer;
+          	 margin-top: 1.5rem;
+          	 padding: 0.75rem 1.5rem;
+          	 font-size: 1rem;
+          	 font-weight: bold;
+          	 letter-spacing: 0.025rem;
+          	 text-transform: uppercase;
+          	 color: #85878A;
+          	 border: none;
+             background-color: transparent;
+          }
+          .btn:hover{
+            color:white;
+          }
+
+
+          .card:after {
+        		 transform: translateY(0);
+        	}
+        	 .content {
+        		 transform: translateY(calc(100% - 4.5rem));
+        	}
+        	 .content > *:not(.title) {
+        		 opacity: 0;
+        		 transform: translateY(1rem);
+        		 transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1), opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
+        	}
+        	 .card:hover, .card:focus-within {
+        		 align-items: center;
+        	}
+        	 .card:hover:before, .card:focus-within:before {
+        		 transform: translateY(-4%);
+        	}
+        	 .card:hover:after, .card:focus-within:after {
+        		 transform: translateY(-50%);
+        	}
+        	 .card:hover .content, .card:focus-within .content {
+        		 transform: translateY(0);
+        	}
+        	 .card:hover .content > *:not(.title), .card:focus-within .content > *:not(.title) {
+        		 opacity: 1;
+        		 transform: translateY(0);
+        		 transition-delay: calc(700ms / 8);
+        	}
+        	 .card:focus-within:before, .card:focus-within:after, .card:focus-within .content, .card:focus-within .content > *:not(.title) {
+        		 transition-duration: 0s;
+        	}
+
 
         }
 
@@ -350,7 +476,7 @@
           input{
             padding: 5px 15px 5px 15px;
             border: none;
-            border-bottom: 1.5px solid #b3aca7;
+            border-bottom: 1.5px solid #85878A;
           }
 
           input, textarea {
@@ -386,14 +512,14 @@
           }
 
           #submit {
-            border: 1.5px solid #b3aca7;
+            border: 1.5px solid #85878A;
             width: 90%;
             padding: 15px;
             margin-left: 5%;
             margin-right: 5%;
             font-family: 'Lato', sans-serif;
             font-size: 0.875em;
-            color: #b3aca7;
+            color: #85878A;
             outline:none;
             cursor: pointer;
           }
@@ -456,7 +582,8 @@
             grid-template-columns: 1fr 1fr;
           }
           #form {
-            margin: 35px auto 100px auto;
+            margin: 90px auto 100px auto;
+            width:75%;
           }
 
 

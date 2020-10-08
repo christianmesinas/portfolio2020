@@ -45,6 +45,7 @@
            }
        }
 
+
  //======== Jquery full page navigation =============//
 
             $(document).ready(function() {
