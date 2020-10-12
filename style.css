@@ -61,7 +61,6 @@
            position: fixed;
            top: 0;
            width: 100%;
-           opacity: 0.9;
            visibility: hidden;
        }
 
@@ -94,6 +93,7 @@
           }
 
           .menu{
+
             visibility: visible;
 
           }
@@ -209,6 +209,7 @@
         .projects-text{
           width:90%;
           position: absolute;
+          padding-right: 10%;
         }
 
 
@@ -233,22 +234,22 @@
          background-position: center;
       }
 
-         .card:nth-child(1):before {
+         .card:nth-child(1):before, .project-Date {
            background-image: url(./images/IMG_5176.jpg);
            filter: grayscale(50%);
 
         }
 
-         .card:nth-child(2):before {
+         .card:nth-child(2):before, .project-hairdressing {
            background-image: url(./images/2020-10-08.png);
 
         }
-         .card:nth-child(3):before {
+         .card:nth-child(3):before, .project-Opticien {
            background-image: url(./images/grey.jpg);
 
 
         }
-         .card:nth-child(4):before {
+         .card:nth-child(4):before, .project-Fylo {
            background-image: url(./images/black_laptop.jpg);
 
         }
@@ -348,14 +349,14 @@
           	 line-height: 1.2;
           }
            .copy {
-          	 font-size: 2.5rem;
+          	 font-size: 1.2rem;
           	 line-height: 1.35;
           }
            .btn {
           	 cursor: pointer;
           	 margin-top: 1.5rem;
           	 padding: 0.75rem 1.5rem;
-          	 font-size: 1rem;
+          	 font-size: 0.8rem;
           	 font-weight: bold;
           	 letter-spacing: 0.025rem;
           	 text-transform: uppercase;
@@ -708,22 +709,32 @@
 /*-------------Project page ------------*/
 
           /*project image*/
-          .projectHero img{
-            margin-top: 80px;
+          .projectHero {
             height: 300px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
             width: 100%
           }
 
-          /*project text*/
-
-          #projectPageText{
+          #projectImg{
+            padding-top: 15%;
           }
+
+          /*project text*/
 
           #projectPageText p{
             position: relative;
             padding: 5%;
             color: #2F485A;
             font-size: 16px;
+          }
+
+          #projectPageText a{
+            text-decoration: none;
+          }
+          #projectPageText a:hover{
+            font-weight: bold;
           }
 
           /*external link button*/
@@ -743,3 +754,44 @@
           .nextProject{
             text-align: right;
           }
+
+
+      /*desktop project page grid*/
+      @media screen and (min-width: 740px) {
+          #projects-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+          }
+          #projectImg{
+            padding-top: 0%;
+            grid-area: 1/2;
+          }
+          .projectHero {
+            background-position:left bottom;
+            position: fixed;
+            height: 100%;
+            margin-top: 0px;
+          }
+
+          .project-credits p{
+            background-color: white;
+          }
+          .projectWebsite{
+            width: 50%;
+          }
+
+          .back-project{
+            margin-top: 10%;
+          }
+          .project-menu{
+            background-color: white;
+            width: 45%;
+          }
+          .project-Date{
+            background-position: -150px;
+          }
+
+
+
+        }
