@@ -240,7 +240,7 @@
 
         }
 
-         .card:nth-child(2):before, .project-hairdressing {
+         .card:nth-child(2):before  {
            background-image: url(./images/2020-10-08.png);
 
         }
@@ -297,6 +297,7 @@
           }
 
            .card {
+             
              position: relative;
           	 display: flex;
           	 align-items: flex-end;
@@ -351,11 +352,12 @@
            .copy {
           	 font-size: 1.2rem;
           	 line-height: 1.35;
+             padding-bottom: 30px;
           }
            .btn {
           	 cursor: pointer;
           	 margin-top: 1.5rem;
-          	 padding: 0.75rem 1.5rem;
+          	 padding: 0.75rem 0.5rem;
           	 font-size: 0.8rem;
           	 font-weight: bold;
           	 letter-spacing: 0.025rem;
@@ -363,6 +365,7 @@
           	 color: #85878A;
           	 border: none;
              background-color: transparent;
+             text-decoration: none;
           }
           .btn:hover{
             color:white;
@@ -475,7 +478,7 @@
           left:70%;
         }
         .marker4{
-          top: 80%;
+          top: 70%;
           left:30%;
         }
         @media only screen and (min-width:740px) {
@@ -717,10 +720,6 @@
             width: 100%
           }
 
-          #projectImg{
-            padding-top: 15%;
-          }
-
           /*project text*/
 
           #projectPageText p{
@@ -755,6 +754,12 @@
             text-align: right;
           }
 
+          /*image for hairdressing page*/
+
+          .project-hairdressing {
+            background-image: url(./images/jchair.jpg);
+         }
+
 
       /*desktop project page grid*/
       @media screen and (min-width: 740px) {
@@ -781,9 +786,6 @@
             width: 50%;
           }
 
-          .back-project{
-            margin-top: 10%;
-          }
           .project-menu{
             background-color: white;
             width: 45%;
