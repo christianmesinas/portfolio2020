@@ -87,7 +87,7 @@
         }
 
 /*--------styling menu desktop------------*/
-        @media screen and (min-width: 740px) {
+        @media screen and (min-width: 760px) {
 
           .menu-btn {
             display: none;
@@ -170,7 +170,7 @@
           padding: 10px;
         }
 /*-----intro section desktop----*/
-          @media screen and (min-width: 740px) {
+          @media screen and (min-width: 760px) {
             .bg-intro{
               display: grid;
               grid-template-columns: 1fr 1fr;
@@ -256,7 +256,7 @@
         }
 
 /*-----projects section desktop--------*/
-        @media screen and (min-width: 740px) {
+        @media screen and (min-width: 760px) {
           .projectsSectionLinks{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -482,7 +482,7 @@
           top: 70%;
           left:30%;
         }
-        @media only screen and (min-width:740px) {
+        @media only screen and (min-width:760px) {
           .map-item {
             position: absolute;
             width: 36px;
@@ -539,7 +539,7 @@
 
 /*-----skills section desktop--------*/
 
-      @media screen and (min-width: 740px) {
+      @media screen and (min-width: 760px) {
           .skills-grid{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -662,7 +662,7 @@
 
     /*desktop footer contact and inputform*/
 
-          @media screen and (min-width: 740px) {
+          @media screen and (min-width: 760px) {
 
           .contact{
             margin-top: 0px;
@@ -770,7 +770,7 @@
 
 
       /*desktop project page grid*/
-      @media screen and (min-width: 740px) {
+      @media screen and (min-width: 760px) {
           #projects-grid{
             display: grid;
             grid-template-columns: 1fr 1fr;
