@@ -62,6 +62,7 @@
            top: 0;
            width: 100%;
            visibility: hidden;
+           transition: all 1s;
        }
 
        .menu ul {
@@ -297,7 +298,7 @@
           }
 
            .card {
-             
+
              position: relative;
           	 display: flex;
           	 align-items: flex-end;
@@ -706,7 +707,14 @@
 
 
           }
-
+/*-----------icons-----------------*/
+          .fab{
+            color: black;
+            font-size: 1.5rem;
+          }
+          .padding-icons{
+            padding-top:20%;
+          }
 
 
 /*-------------Project page ------------*/
@@ -781,6 +789,7 @@
 
           .project-credits p{
             background-color: white;
+
           }
           .projectWebsite{
             width: 50%;
