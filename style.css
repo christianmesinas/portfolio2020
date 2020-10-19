@@ -18,6 +18,11 @@
           z-index: 1;
         }
 
+        p{
+          font-weight: 300;
+          font-size: 18px;
+        }
+
 
 /* Styling the menu button */
        .menu-btn {
@@ -62,7 +67,6 @@
            top: 0;
            width: 100%;
            visibility: hidden;
-           transition: all 1s;
        }
 
        .menu ul {
@@ -88,6 +92,9 @@
 
 /*--------styling menu desktop------------*/
         @media screen and (min-width: 780px) {
+          .menu{
+            transition: all 1s;
+          }
 
           .menu-btn {
             display: none;
@@ -569,6 +576,9 @@
             text-align: center;
             font-size: 30px;
             padding-bottom: 10%;
+          }
+          .span-contact{
+            display: block;
           }
 
           /* contact form */
