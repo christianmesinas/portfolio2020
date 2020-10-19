@@ -152,7 +152,7 @@
 
         .bg-intro {
           margin-top: 80px;
-          background-image: url('images/blue-mountain.jpg');
+          background-image: url('images/blue-mountain.jpeg');
           background-repeat:no-repeat;
           background-size: cover;
           width: 100%;
@@ -236,7 +236,7 @@
       }
 
          .card:nth-child(1):before, .project-Date {
-           background-image: url(./images/IMG_5176.jpg);
+           background-image: url(./images/IMG_5176.jpeg);
            filter: grayscale(50%);
 
         }
@@ -246,12 +246,12 @@
 
         }
          .card:nth-child(3):before, .project-Opticien {
-           background-image: url(./images/grey.jpg);
+           background-image: url(./images/grey.jpeg);
 
 
         }
          .card:nth-child(4):before, .project-Fylo {
-           background-image: url(./images/black_laptop.jpg);
+           background-image: url(./images/black_laptop.jpeg);
 
         }
 
