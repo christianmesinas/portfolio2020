@@ -87,7 +87,7 @@
         }
 
 /*--------styling menu desktop------------*/
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 780px) {
 
           .menu-btn {
             display: none;
@@ -170,7 +170,7 @@
           padding: 10px;
         }
 /*-----intro section desktop----*/
-          @media screen and (min-width: 760px) {
+          @media screen and (min-width: 780px) {
             .bg-intro{
               display: grid;
               grid-template-columns: 1fr 1fr;
@@ -256,7 +256,7 @@
         }
 
 /*-----projects section desktop--------*/
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 780px) {
           .projectsSectionLinks{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -482,7 +482,7 @@
           top: 70%;
           left:30%;
         }
-        @media only screen and (min-width:760px) {
+        @media only screen and (min-width:780px) {
           .map-item {
             position: absolute;
             width: 36px;
@@ -539,7 +539,7 @@
 
 /*-----skills section desktop--------*/
 
-      @media screen and (min-width: 760px) {
+      @media screen and (min-width: 780px) {
           .skills-grid{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -636,7 +636,7 @@
             margin-left: 5%;
             margin-right: 5%;
             font-family: 'Lato', sans-serif;
-            font-size: 0.875em;
+            font-size: 18px;
             color: #85878A;
             outline:none;
             cursor: pointer;
@@ -644,7 +644,7 @@
 
           #submit:hover {
             color: #e2dedb;
-            background-color: #85878A;
+            background-color: black;
           }
 /*------------Footer-----------*/
       /*footer section*/
@@ -662,7 +662,7 @@
 
     /*desktop footer contact and inputform*/
 
-          @media screen and (min-width: 760px) {
+          @media screen and (min-width: 780px) {
 
           .contact{
             margin-top: 0px;
@@ -693,6 +693,7 @@
             padding-bottom: 10px;
           }
           #submit{
+            font-size: 0.875em;
             width: 50%;
           }
           #credits{
@@ -770,7 +771,7 @@
 
 
       /*desktop project page grid*/
-      @media screen and (min-width: 760px) {
+      @media screen and (min-width: 780px) {
           #projects-grid{
             display: grid;
             grid-template-columns: 1fr 1fr;

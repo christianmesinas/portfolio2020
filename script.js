@@ -52,7 +52,7 @@
 
                  $('#fullpage').fullpage({
                   sectionSelector: '.vertical-scrolling',
-                  responsiveWidth: 740,
+                  responsiveWidth: 1000,
                   navigation: false,
                   slidesNavigation: true,
                   controlArrows: false,
