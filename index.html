@@ -2,6 +2,7 @@
 <html lang="nl" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Fullstack developer met passie voor mobile design en user experience">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -185,8 +186,11 @@
 
         <form id="form" class="topBefore">
           <p class="formTitle">Stuur mij een bericht</p>
-      		  <input id="name" type="text" placeholder="Naam">
+          <label for="name"></label>
+      		  <input id="name" type="text" placeholder="Naam" >
+            <label for="email"></label>
             <input id="email" type="text" placeholder="E-mail">
+            <label for="message"></label>
       		  <textarea id="message" type="text" placeholder="Bericht"></textarea>
             <input id="submit" type="submit" value="Verstuur bericht!">
         </form>
