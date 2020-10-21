@@ -813,6 +813,7 @@
          }
 
          .tags span{
+           font-weight: 200;
            display: inline-block;
            margin:3%;
            border-radius:5px;
